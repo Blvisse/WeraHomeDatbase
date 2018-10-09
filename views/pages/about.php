@@ -1,0 +1,2 @@
+<h2><?=$title ?></h2>
+<p>The Wera Data Tool is is a small business Data Tool that allows for storage and organisation of small businesses' data.<br> It allows the user to store and track what they have,buy and sell from their businesses with the system analyzing and provididng a statistical analysis of what the projected profits of the business </p>
