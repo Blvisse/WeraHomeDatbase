@@ -72,14 +72,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $active_group = 'default';
 $query_builder = TRUE;
-
+$db['default']['hostname'] = 'localhost'; //server
+$db['default']['username'] = 'username'; //mysql username
+$db['default']['password'] = 'password'; //mysql password
+$db['default']['database'] = 'mysite'; //database name
+$db['default']['dbdriver'] = 'mysql';
 $db['default'] = array(
 	'dsn'	=> '',
 	'hostname' => 'localhost',
 	'username' => 'root',
 	'password' => '',
-	'database' => 'wera',
-	'dbdriver' => 'mysqli',
+	'database' => 'mysite',
+	'dbdriver' => 'mysql',
 	'dbprefix' => '',
 	'pconnect' => FALSE,
 	'db_debug' => (ENVIRONMENT !== 'production'),
