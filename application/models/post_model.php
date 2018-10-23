@@ -11,6 +11,7 @@ class post_model extends CI_Model
 	}
   public function get_posts($slug =false){
   	if ($slug === false) {
+      $this->db->order_by('id','DESC');
   		$query = $this->db->get('posts');
   		return $query->result_array();
 
@@ -28,5 +29,10 @@ class post_model extends CI_Model
       'body' =>$this->input->post('body')   );
     return $this->db->insert('posts',$data);
   }
+  public function delete_post($id){
+      $this->db->where('id',$id);
+      $this->db->delete('posts');
+      return true;
+    }
 
 }
